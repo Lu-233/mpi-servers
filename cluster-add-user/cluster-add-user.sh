@@ -13,7 +13,7 @@ while true; do
 	esac
 done
 
-username=$1
+username=$argv[-1]
 [[ -z $email ]] && echo '--email is not specified.' >&2 && exit 1
 [[ -z $publicKey ]] && echo '--public-key is not specified.' >&2 exit 1
 
